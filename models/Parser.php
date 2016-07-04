@@ -36,7 +36,7 @@ class Parser extends  Object
     }
 
     /**
-     * @param \pahanini\restdoc\models\Doc $doc
+     * @param \thiagoarioli\restdoc\models\Doc $doc
      * @return bool Weather parse was successful
      */
     public function parse(Doc $doc)
@@ -54,7 +54,7 @@ class Parser extends  Object
 
         if (!$isRegistered) {
             $mapping = [
-                'query' => '\pahanini\restdoc\tags\QueryTag',
+                'query' => '\thiagoarioli\restdoc\tags\QueryTag',
                 'field' => '\phpDocumentor\Reflection\DocBlock\Tag\ParamTag',
                 'link' => '\phpDocumentor\Reflection\DocBlock\Tag\ParamTag',
                 'label' => '\phpDocumentor\Reflection\DocBlock\Tag',

@@ -13,7 +13,7 @@ use Yii;
 class ModelParser extends ObjectParser
 {
     /**
-     * @param \pahanini\restdoc\models\Doc
+     * @param \thiagoarioli\restdoc\models\Doc
      * @return void
      */
     public function parse(Doc $doc)
@@ -58,7 +58,7 @@ class ModelParser extends ObjectParser
     }
 
     /**
-     * @param \pahanini\restdoc\models\ModelDoc $doc
+     * @param \thiagoarioli\restdoc\models\ModelDoc $doc
      * @param string $methodName
      * @return bool
      */

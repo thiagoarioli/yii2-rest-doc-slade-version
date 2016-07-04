@@ -20,7 +20,7 @@ class ControllerParser extends ObjectParser
     public $actions = [];
 
     /**
-     * @var \pahanini\restdoc\models\ModelDoc
+     * @var \thiagoarioli\restdoc\models\ModelDoc
      */
     public $model;
 
@@ -67,7 +67,7 @@ class ControllerParser extends ObjectParser
     /** @var bool Does this DocBlock signify the end of a DocBlock template? */
     protected $isTemplateEnd = false;
     /**
-     * @param \pahanini\restdoc\models\Doc
+     * @param \thiagoarioli\restdoc\models\Doc
      * @return void
      */
     public function parse(Doc $doc)
@@ -102,7 +102,7 @@ class ControllerParser extends ObjectParser
         // Parse model
         $modelParser = Yii::createObject(
             [
-                'class' => '\pahanini\restdoc\models\ModelParser',
+                'class' => '\thiagoarioli\restdoc\models\ModelParser',
                 'reflection' => new \ReflectionClass($this->getObject()->modelClass),
             ]
         );

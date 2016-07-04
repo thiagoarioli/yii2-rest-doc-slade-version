@@ -18,7 +18,7 @@ class ControllerDoc extends Doc
     public $actions;
 
     /**
-     * @var \pahanini\restdoc\models\ModelDoc
+     * @var \thiagoarioli\restdoc\models\ModelDoc
      */
     public $model;
 

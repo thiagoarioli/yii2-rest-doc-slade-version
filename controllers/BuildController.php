@@ -17,7 +17,7 @@ class BuildController extends Controller
     public $defaultAction = 'run';
 
     /**
-     * @var string `\pahanini\restdoc\models\ControllerDoc` property used for for sorting.
+     * @var string `\thiagoarioli\restdoc\models\ControllerDoc` property used for for sorting.
      */
     public $sortProperty = 'shortDescription';
 

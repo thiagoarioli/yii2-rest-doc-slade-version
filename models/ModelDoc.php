@@ -8,7 +8,7 @@ use Yii;
 /**
  * Class ModelDoc
  *
- * @property \pahanini\restdoc\models\FieldDoc[] $fields
+ * @property \thiagoarioli\restdoc\models\FieldDoc[] $fields
  */
 class ModelDoc extends Doc
 {
@@ -85,7 +85,7 @@ class ModelDoc extends Doc
     }
 
     /**
-     * @return \pahanini\restdoc\models\FieldDoc[]
+     * @return \thiagoarioli\restdoc\models\FieldDoc[]
      */
     public function getExtraFields()
     {
@@ -93,7 +93,7 @@ class ModelDoc extends Doc
     }
 
     /**
-     * @return \pahanini\restdoc\models\FieldDoc[]
+     * @return \thiagoarioli\restdoc\models\FieldDoc[]
      */
     public function getFields()
     {
@@ -101,7 +101,7 @@ class ModelDoc extends Doc
     }
 
     /**
-     * @return \pahanini\restdoc\models\FieldDoc[]
+     * @return \thiagoarioli\restdoc\models\FieldDoc[]
      */
     public function getSortFields()
     {
@@ -109,7 +109,7 @@ class ModelDoc extends Doc
     }
 
     /**
-     * @return \pahanini\restdoc\models\ControllerDoc
+     * @return \thiagoarioli\restdoc\models\ControllerDoc
      */
     public function getParent()
     {

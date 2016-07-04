@@ -12,12 +12,12 @@ use yii\helpers\FileHelper;
 /**
  * Class Context.
  *
- * @property-read \pahanini\restdoc\models\ControllerDoc[] $controllers
+ * @property-read \thiagoarioli\restdoc\models\ControllerDoc[] $controllers
  */
 class Context extends \yii\base\Component
 {
     /**
-     * @var \pahanini\restdoc\models\ControllerDoc[] Keeps controllers.
+     * @var \thiagoarioli\restdoc\models\ControllerDoc[] Keeps controllers.
      */
     private $_controllers = [];
 
@@ -132,7 +132,7 @@ class Context extends \yii\base\Component
 
     /**
      * Returns list of controller documents.
-     * @return \pahanini\restdoc\models\ControllerDoc[]
+     * @return \thiagoarioli\restdoc\models\ControllerDoc[]
      */
     public function getControllers()
     {

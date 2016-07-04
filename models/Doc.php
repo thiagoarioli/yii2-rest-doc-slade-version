@@ -15,7 +15,7 @@ class Doc extends Object
     const TAG_PREFIX = 'restdoc-';
 
     /**
-     * @var \pahanini\restdoc\models\Doc
+     * @var \thiagoarioli\restdoc\models\Doc
      */
     private $_parent;
 
@@ -26,7 +26,7 @@ class Doc extends Object
 
 
     /**
-     * @return \pahanini\restdoc\models\Doc
+     * @return \thiagoarioli\restdoc\models\Doc
      */
     public function getParent()
     {
