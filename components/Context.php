@@ -1,11 +1,11 @@
 <?php
 
-namespace pahanini\restdoc\components;
+namespace thiagoarioli\restdoc\components;
 
-use pahanini\restdoc\models\ControllerParser;
+use thiagoarioli\restdoc\models\ControllerParser;
 use phpDocumentor\Reflection\FileReflector;
 use Yii;
-use pahanini\restdoc\models\ControllerDoc;
+use thiagoarioli\restdoc\models\ControllerDoc;
 use yii\base\InvalidParamException;
 use yii\helpers\FileHelper;
 

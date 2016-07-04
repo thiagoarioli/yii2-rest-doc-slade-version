@@ -1,9 +1,9 @@
 <?php
 
-namespace pahanini\restdoc\models;
+namespace thiagoarioli\restdoc\models;
 
-use pahanini\restdoc\helpers\DocBlockHelper;
-use pahanini\restdoc\helpers\DocBlockModel;
+use thiagoarioli\restdoc\helpers\DocBlockHelper;
+use thiagoarioli\restdoc\helpers\DocBlockModel;
 use phpDocumentor\Reflection\DocBlock;
 use Yii;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace pahanini\restdoc\controllers;
+namespace thiagoarioli\restdoc\controllers;
 
 use Yii;
 use yii\console\Controller;
-use pahanini\restdoc\components\Context;
+use thiagoarioli\restdoc\components\Context;
 
 /**
  * Builds REST documentation.

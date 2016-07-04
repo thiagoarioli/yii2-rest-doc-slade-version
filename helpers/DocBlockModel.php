@@ -10,7 +10,7 @@
  * @link      http://phpdoc.org
  */
 
-namespace pahanini\restdoc\helpers;
+namespace thiagoarioli\restdoc\helpers;
 
 use phpDocumentor\Reflection\DocBlock;
 use phpDocumentor\Reflection\DocBlock\Tag;

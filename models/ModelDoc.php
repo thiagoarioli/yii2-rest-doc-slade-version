@@ -1,6 +1,6 @@
 <?php
 
-namespace pahanini\restdoc\models;
+namespace thiagoarioli\restdoc\models;
 
 use phpDocumentor\Reflection\DocBlock;
 use Yii;

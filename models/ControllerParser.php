@@ -1,10 +1,10 @@
 <?php
 
-namespace pahanini\restdoc\models;
+namespace thiagoarioli\restdoc\models;
 
-use pahanini\restdoc\helpers\DocBlockClass;
-use pahanini\restdoc\helpers\DocBlockHelper;
-use pahanini\restdoc\helpers\DocBlockMethod;
+use thiagoarioli\restdoc\helpers\DocBlockClass;
+use thiagoarioli\restdoc\helpers\DocBlockHelper;
+use thiagoarioli\restdoc\helpers\DocBlockMethod;
 use phpDocumentor\Reflection\DocBlock;
 use Yii;
 use yii\helpers\ArrayHelper;

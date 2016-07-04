@@ -1,6 +1,6 @@
 <?php
 
-namespace pahanini\restdoc\helpers;
+namespace thiagoarioli\restdoc\helpers;
 
 use phpDocumentor\Reflection\DocBlock;
 

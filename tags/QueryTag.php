@@ -1,6 +1,6 @@
 <?php
 
-namespace pahanini\restdoc\tags;
+namespace thiagoarioli\restdoc\tags;
 
 use phpDocumentor\Reflection\DocBlock\Tag;
 
