@@ -37,51 +37,6 @@ You do not need to edit documentation when you change you code. Just rebuild you
 ]
 ```
 
-## Template example (twig)
-
-``` html 
-{% for controller in controllers %}
-	<h2>{{ controller.shortDescription }}</h2>
-	<p>{{ controller.longDescription }}</p>
-	{% if controller.hasLabel('authenticated') %}
-		<div class="warning">Require login and password!</div>
-	{% endif %}
-	<p>List of supported actions:
-		<ul>
-			{% for action in controller.actions %}
-				<li>{{ action }}</li>
-			{% endfor %}
-		</ul>
-	</p>
-	<p>Get params available for index action:</p>
-		<ul>
-			{% for item in controller.query %}
-				<li>
-					<b>{{ item.variableName }}</b> - {{ item.description }}, default - {{ item.defaultValue }}
-				</li>
-			{% endfor %}
-		</ul>
-	</p>
-	<p>Model fields:</p>
-	<table>
-		<tr>
-			<th>Name</th>
-			<th>Type</th>
-			<th>Description</th>
-			<th>Can be updated?</th>
-		</tr>
-		{% for item in controller.model.fields %}
-			<tr>
-				<td>{{ item.name }}</td>
-				<td>{{ item.type }}</td>
-				<td>{{ item.description }}</td>
-				<td>{{ item.isInScenario('api-update')  ? 'yes' : 'no' }}</td>
-			</tr>
-		{% endfor %}
-	</table>
-{% endfor %}
-```
-
 ## Data available in template  
 
 List of data automatically extracted from code:
@@ -157,15 +112,17 @@ Example:
 
 ``` php
 'controllerMap' => [
-	'build-rest-doc' => [
-		'sourceDirs' => [
-			'@frontend\controllers\rest',
-		],
-		'template' => '//restdoc/restdoc.twig',
-		'class' => '\pahanini\restdoc\controllers\BuildController',
-		'targetFile' => 'path/to/slate/index.md',
-		'on afterAction' => function() { exec("bundle exec middleman build") }
-	],
+    'build-rest-doc' => [
+        'sourceDirs' => [
+            '@api/modules/v1/controllers',   // <-- path to your API controllers
+        ],
+        'template' => '//restdoc/slate.php',
+        'class' => '\thiagoarioli\restdoc\controllers\BuildController',
+        'targetFile' => '@console/slate/source/index.html.md',
+        'on afterAction' => function() {
+            exec("bundle exec middleman build");
+        }
+    ],
 ]
 ```
   
