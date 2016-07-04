@@ -1,3 +1,6 @@
+# yii2-rest-doc-slade-version
+This is a version off yii2-rest-doc created by @pahanini
+
 #Yii2 Rest Controller Documentator
 
 [![Build Status](https://travis-ci.org/pahanini/yii2-rest-doc.svg?branch=master)](https://travis-ci.org/pahanini/yii2-rest-doc)
@@ -177,4 +180,5 @@ In other hand Yii2 controllers and models keep a lot of information about intern
 field names, scenarios for update and insert operations. This package extracts such an information from 
 REST controllers and models and using this data along with phpdocumentator tags automatically generates 
 index.md for [slate](https://github.com/tripit/slate) or any other documentation file. 
+
 
