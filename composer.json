@@ -4,7 +4,7 @@
 	"keywords": ["yii2", "rest", "api", "doc", "slate"],
 	"homepage": "https://github.com/thiagoarioli/yii2-rest-doc-slade-version",
 	"type": "yii2-extension",
-	"minimum-stability": "dev",
+    "minimum-stability": "dev",
 	"license": "BSD-3-Clause",
 	"authors": [
 		{
