@@ -155,6 +155,7 @@ class ControllerParser extends ObjectParser
                     $doc->populateTagsMethod($docBlock);
 
                     $var[$valuee]['short'] = $docBlock->getShortDescription();
+                    $var[$valuee]['long'] = $docBlock->getLongDescription()->getParsedContents();
                     $var[$valuee]['request'] = [explode(' ', $keyy)[0]];
                     $var[$valuee]['tags'] = $docBlock->getTags();
                 }
